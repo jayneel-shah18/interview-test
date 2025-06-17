@@ -28,4 +28,8 @@ export interface VoiceEntry {
 export interface ProcessedResult {
   summary: string;
   tagFrequencies: Record<string, number>;
+    languageDistribution: Record<string, number>;
+  categoryDistribution: Record<string, number>;
+  avgEmotionScore: string | number;
+  entriesWithEmotionScore: number;
 } 
